@@ -24,11 +24,20 @@
                     <form class="d-flex flex-end ms-auto p-2" role="search">
                         <ul class="navbar-nav  mb-2 mb-lg-0">
                             <li class="nav-item">
-                              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                              <a class="nav-link text-white" href="#" >veMULTI</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link text-white" href="#" >Link</a>
+                              <a class="nav-link active text-white" aria-current="page" href="#">Explorer</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="#">Docs</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="#">Github</a>
+                              </li>
+                              <li class="nav-item">
+                               <button class="nav-btn">Enter App</button>
+                              </li>
                           </ul>
                     </form>
                   </div>
@@ -37,12 +46,14 @@
             <!-- BANNER HERO STARTS -->
             <div class="banner__hero">
                 <div class="container">
-                    <div class="row">
+                    <div class="row align-items-center">
                         <div class="col-md-6">
                             <div class="banner__hero--title">
                                 Cross-Chain <br> <span> Router</span> Protocol
                             </div>
                             <p class="banner__hero--text">The Ultimate Router for Web3.0</p>
+                            <button class="banner__hero--btn ">Explorer</button>
+                            <button class="banner__hero--btn bg-success">Enter App</button>
                         </div>
                         <div class="col-md-6">
                             <img src="./assets/bg.png" class="banner__hero--img" alt="">
@@ -50,22 +61,22 @@
                     </div>
                 </div>
             </div>
-            <div class="banner__form shadow">
-                <div class="container">
+            <div class="banner__form shadow py-3">
+                <div class="container py-3">
                     <div class="row align-items-center text-center justify-content-center">
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-lg-3 col-md-6">
                             <div class="banner__form--title">Total Volume</div>
                             <div class="banner__form--subtitle">$88.79 B</div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-lg-3 col-md-6">
                             <div class="banner__form--title">Total Volume</div>
                             <div class="banner__form--subtitle">$88.79 B</div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-6 col-lg-3">
                             <div class="banner__form--title">Total Volume</div>
                             <div class="banner__form--subtitle">$88.79 B</div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-6 col-lg-3">
                             <div class="banner__form--title">Total Volume</div>
                             <div class="banner__form--subtitle">$88.79 B</div>
                         </div>
@@ -86,7 +97,7 @@
                         <br> Messaging Protocol
                        </p>
                        <p><span class="text-success">anyCall</span> Workshop</p>
-                       <button class="rounded-pill">Join Now</button>
+                       <button class="rounded-pill join__col--btn">Join Now</button>
                     </div>
                     <div class="col-md-6 join__col pt-4">
                         <img src="/assets/anycall-right.webp" alt="" class="join__col--img">
@@ -108,7 +119,7 @@
                         <div class="starts__col--title">fastMPC Mainnet Lives</div>
                         <p class="starts__col--text">A Ground Breaking Improvement <br> towards Further Decentralization</p>
                         <p class="starts__col--text">Node Recruitment</p>
-                        <button class="rounded-pill">start Now</button>
+                        <button class="rounded-pill starts__col--btn">START NOW</button>
                     </div>
                 </div>
             </div>
@@ -117,12 +128,13 @@
 
         <!-- WHY SECTION STARTS -->
         <div class="why py-5">
+            <div class="why--title text-center mb-3">Why Multichain</div>
            <div class="container py-5">
-            <div class="why--title text-center">Why Multichain</div>
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-4 why__col ">
                     <div class="card why__card border-0">
-                        <div class="card-title">Non-custodial + MPC</div>
+                        <span class="fa fa-lock fa-4x why__card--icon"></span>
+                        <div class="card-title why__card--title">Non-custodial + MPC</div>
                         <div class="card-body">
                             MPC, the powerful symbol of decentralization, 
                             processes Multichain cross-chain bridging and
@@ -132,21 +144,22 @@
                 </div>
                 <div class="col-md-4 why__col ">
                     <div class="card why__card border-0">
-                        <div class="card-title">Non-custodial + MPC</div>
+                        <span class="fa fa-exchange fa-4x  why__card--icon"></span>
+                        <div class="card-title why__card--title">No-slippage Swap</div>
                         <div class="card-body">
-                            MPC, the powerful symbol of decentralization, 
-                            processes Multichain cross-chain bridging and
-                             smart contract methods on other chains.
+                            Multichain’s 1:1 swap enables users to perform 0 slippage 
+                            transfers and eliminate the hidden cost associated with AMM.
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 why__col ">
-                    <div class="card why__card border-0">
-                        <div class="card-title">Non-custodial + MPC</div>
+                    <div class="card why__card border-0 ">
+                        <span class="fa fa-crosshairs fa-4x why__card--icon"></span>
+                        <div class="card-title why__card--title">Multichain Router</div>
                         <div class="card-body">
-                            MPC, the powerful symbol of decentralization, 
-                            processes Multichain cross-chain bridging and
-                             smart contract methods on other chains.
+                            Multichain Router allows users to swap between
+                             any two chains freely. It reduces fees and makes
+                              it easier to move between chains.
                         </div>
                     </div>
                 </div>

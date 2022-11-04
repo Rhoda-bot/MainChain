@@ -1,6 +1,24 @@
 li{
     list-style-type: none;
 }
+.navbar-toggler{
+    background-color: #ffffff;
+    margin-top: .7rem;
+}
+.navbar-toggler-icon{
+    color: #ffffff;
+}
+.nav-item{
+    padding: .2rem 1.5rem;
+}
+.nav-btn{
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: 500;
+    color: blue;
+    width: 8vw;
+    border: #ffffff;
+}
 .wrapper{
     background-color: #21263e;
     color: #ffffff;
@@ -19,7 +37,14 @@ li{
         &--img{
             width: 100%;
             background-size: contain;
-            height: 50vh;
+            height: 50%;
+        }
+        &--btn{
+            padding: 9px;
+            border: transparent;
+            width: 9vw;
+            border-radius: 10px;
+            font-weight: 500;
         }
       }
       &__form{
@@ -30,6 +55,10 @@ li{
         left: 20%;
         transform: translate(10%, 45%);
         border-radius: 10px;
+        &--subtitle{
+            color: #9649f5;
+            font-size: 1.5rem;
+        }
       }
     }
     .join{
@@ -40,10 +69,38 @@ li{
                 width: 100%;
                 opacity: .5;
             }
+            &--btn{
+                width: 10vw;
+                background-color: transparent;
+                border:1px solid #964cf5;
+                font-weight: 700;
+                padding: 6px;
+                color: #9857f6;
+            }
         }
     }
     .starts{
         background-color: #1c2133;
+        &__col{
+            &--title{
+                padding:0 .5rem;
+                // margin: 0 .5rem;
+                border: 2px solid #9649f5;
+                border-radius: 10px;
+                margin-bottom: 1rem;
+                font-size: 2rem;
+                font-weight: 600;
+                text-align: start;
+            }
+            &--btn{
+                border: 1px solid rgb(38, 168, 38);
+                width: 10vw;
+                padding: 7px;
+                background-color: transparent;
+                font-weight: 700;
+                color: rgb(38, 168, 38);
+            }
+        }
     }
     .why{
         &--title{
@@ -68,6 +125,15 @@ li{
             box-shadow: 0 0 12px rgb(0 0 0 / 35%);
             align-items: center;
             height: 50vh;
+            &--icon{
+                margin-bottom: 1rem;
+                color:  transparent linear-gradient(90deg,#9649f5,#964cf5 24%,#9857f6 46%,#9c69f7 67%,#a183f9 87%,#a698fb) 0 0 no-repeat padding-box;
+                border-radius: 50%;
+            }
+            &--title{
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
          }
          &__btn{
             width: 40%;
@@ -78,7 +144,7 @@ li{
             border-radius: 10px;
             top: 50%;
             left: 50%;
-            transform: translate(75%, -66%);
+            transform: translate(75%, -30%);
             // 
          }
         
@@ -99,9 +165,9 @@ li{
             box-shadow: 0 0 12px rgb(0 0 0 / 25%);
             text-align: center; 
             border-radius: 10px;
-            top: 30%;
-            left: 30%;
-            transform: translate(75%, 100%);
+            top: 20%;
+            left: 10%;
+            transform: translate(75%, 125%);
         }
     }
     .footer{
@@ -112,6 +178,9 @@ li{
     }
 }
 @media screen and(max-width:786px) {
+    .nav-btn{
+        width: 20vw;
+    }
     .wrapper{
         .banner{
             &__hero{
@@ -122,6 +191,9 @@ li{
                     width: 100%;
                     height: 50%;
                 }
+                &--btn{
+                    width: 20vw;
+                }
               }
             &__form{
                 height: 50%;
@@ -129,7 +201,11 @@ li{
         }
         .join{
             margin: 3rem .5rem;
-            padding: 2rem;
+            &__col{
+                &--btn{
+                    width: 20vw;
+                }
+            }
         }
         .why{
             display: block;
@@ -157,6 +233,16 @@ li{
                 width: 100%;
            }
         }
+        .starts{
+            &__col{
+                &--title{
+                    font-size: 1.2rem;
+                }
+                &--btn{
+                    width: 20vw;
+                }
+            }
+        }
         .supports{
             &--title{
                 font-size: 2rem;
@@ -168,6 +254,9 @@ li{
     }
 }
 @media screen and(max-width:600px) {
+    .nav-btn{
+        width: 20vw;
+    }
     .wrapper{
         .banner{
             &__hero{
@@ -178,14 +267,35 @@ li{
                     width: 100%;
                     height: 50%;
                 }
+                &--btn{
+                    width: 25vw;
+                }
               }
             &__form{
-                height: 50%;
+                margin: 0;
+                padding: 0;
+                height: 40%;
+                width: 100%;
+                left: 0;
+                transform: translate(0, 0);
+                
+            }
+        }
+        .starts{
+            &__col{
+                &--btn{
+                    width: 28vw;
+                }
             }
         }
         .join{
             margin: 3rem .5rem;
             padding: 2rem;
+            &__col{
+                &--btn{
+                    width: 25vw;
+                }
+            }
         }
         .why{
             display: block;
